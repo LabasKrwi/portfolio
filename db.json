@@ -1,0 +1,15 @@
+{
+    "projects": [
+      { "id": "1", "title": "re-eff-ts",  "body": "Типизированное React-приложение с использование Effector.js", "link": "https://github.com/LabasKrwi/re-eff-ts.git" },
+      { "id": "2", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"},
+      { "id": "3", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"},
+      { "id": "4", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"},
+      { "id": "5", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"},
+      { "id": "6", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"},
+      { "id": "7", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"}
+    ],
+    "techs": [
+        { "id": "1", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"},
+        { "id": "2", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"}
+    ]
+  }
