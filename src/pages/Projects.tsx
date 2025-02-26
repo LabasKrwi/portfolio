@@ -4,7 +4,7 @@ import { $projects } from '../generalstore/store'
 import useFetching from '../hooks/useFethcing'
 import { fetchProjectsEffect } from '../generalstore/effects'
 import ProjectList from '../components/Projects/ProjectList'
-const Projects:FC = () => {
+const Projects:FC = () => { 
     const projects = useUnit($projects);
     const [fetchProjects, isProjectsLoading, isProjectsError] = useFetching(async () => {
         await fetchProjectsEffect();

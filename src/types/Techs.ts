@@ -2,7 +2,7 @@ export interface ITech {
     id: number;
     title: string;
     body: string;
-    link: string
+    logo: string
 }
 
 export interface TechItemProps {

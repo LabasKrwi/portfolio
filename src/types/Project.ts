@@ -12,4 +12,5 @@ export interface ProjectItemProps {
 
 export interface ProjectsListProps {
     projects: IProject[]
+    
 }
