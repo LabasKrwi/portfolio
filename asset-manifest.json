@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/labaskrwi.portfolio/static/css/main.1a8a2601.css",
-    "main.js": "/labaskrwi.portfolio/static/js/main.d02dc80b.js",
-    "index.html": "/labaskrwi.portfolio/index.html",
-    "main.1a8a2601.css.map": "/labaskrwi.portfolio/static/css/main.1a8a2601.css.map",
-    "main.d02dc80b.js.map": "/labaskrwi.portfolio/static/js/main.d02dc80b.js.map"
+    "main.css": "/portfolio/static/css/main.1a8a2601.css",
+    "main.js": "/portfolio/static/js/main.d02dc80b.js",
+    "index.html": "/portfolio/index.html",
+    "main.1a8a2601.css.map": "/portfolio/static/css/main.1a8a2601.css.map",
+    "main.d02dc80b.js.map": "/portfolio/static/js/main.d02dc80b.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a2601.css",
