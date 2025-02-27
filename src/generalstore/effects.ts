@@ -2,7 +2,7 @@ import { createEffect } from "effector";
 import axios, { AxiosResponse } from "axios";
 import { IProject } from "../types/Project";
 import { ITech } from "../types/Techs";
-const BASE_URL = 'https://labaskrwi.github.io/json-database/db.json';
+const BASE_URL = 'https://run.mocky.io/v3/43eb89b6-6f88-4f00-9c23-10f7adf2fa4e';
 
 export const fetchProjectsEffect = createEffect( async ()=> {
     const response: AxiosResponse<IProject[]> = await axios.get(`${BASE_URL}/projects`);
