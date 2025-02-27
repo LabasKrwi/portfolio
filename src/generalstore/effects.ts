@@ -2,7 +2,7 @@ import { createEffect } from "effector";
 import axios, { AxiosResponse } from "axios";
 import { IProject } from "../types/Project";
 import { ITech } from "../types/Techs";
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://labaskrwi.github.io/json-database/db.json';
 
 export const fetchProjectsEffect = createEffect( async ()=> {
     const response: AxiosResponse<IProject[]> = await axios.get(`${BASE_URL}/projects`);

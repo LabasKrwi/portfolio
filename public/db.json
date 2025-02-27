@@ -1,0 +1,21 @@
+{
+    "projects": [
+      { "id": "1", "title": "portfolio",  "body": "Проект портфолио типизированный, написанный с использование json-server, Effector.js. Для поверхностной демонстрации приобретенных навыков", "link": "https://github.com/LabasKrwi/portfolio" },
+      { "id": "2", "title": "re-eff-ts",  "body": "Типизированное React-приложение с использование Effector.js", "link": "https://github.com/LabasKrwi/re-eff-ts.git" },
+      { "id": "3", "title": "redux-typescript-course",  "body": "React-приложение для работы со списком дел с возможностью редактирования и отметки о выполнении",  "link": "https://github.com/LabasKrwi/redux-typescript-course.git"},
+      { "id": "4", "title": "react-ts2-course",  "body": "Первое React-приложение с использованием typescript и запросом списка дел",  "link": "https://github.com/LabasKrwi/react-ts2-course.git"},
+      { "id": "5", "title": "redux-profi-course",  "body": "Типизированное React-приложение по работе со списком постов с использование Redux-Toolkit и RTK-Query(функция CreateApi)",  "link": "https://github.com/LabasKrwi/redux-profi-course"},
+      { "id": "6", "title": "redux-typescript-course",  "body": "React-приложение, в ходе которого впервые осваивал глобальное состояние, а также типизацию входных данных",  "link": "https://github.com/LabasKrwi/react-redux-ts-course.git"},
+      { "id": "7", "title": "redux-course",  "body": "Микро React-приложение для освоения глобального состояния Redux, поверхностное знакомство с юнитами стейтменеджера",  "link": "https://github.com/LabasKrwi/redux-course.git"},
+      { "id": "8", "title": "react-ts-course",  "body": "React-приложение с использованием типизации и отрисовки пользователей и списка постов. Типизация событий",  "link": "https://github.com/LabasKrwi/redux-course.git"},
+      { "id": "9", "title": "my-app2",  "body": "Мое первое React-приложение",  "link": "https://github.com/LabasKrwi/my-app2"}
+    ],
+    "techs": [
+        { "id": "1", "title": "JavaScript",  "body": "Один из языков программирования, используемый для front-end и back-end частей приложений",  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png"},
+        { "id": "2", "title": "React",  "body": "Библиотека для создания пользовательских интерфейсов на основе языка JavaScript",  "logo": "https://i.ytimg.com/vi/5LSWseJFggs/maxresdefault.jpg"},
+        { "id": "3", "title": "TypeScript",  "body": "Строготипизированная надстройка над Javascript ",  "logo": "https://avatars.mds.yandex.net/i?id=69cffdf42421715b6798a650d7a3c8374ad7ea72c622697b-12173886-images-thumbs&n=13"},
+        { "id": "4", "title": "Redux",  "body": "Инструмент для управления глобальным состоянием приложения",  "logo": "https://avatars.mds.yandex.net/i?id=9914ff3fb1c5614ad742f0e940ac7c7e08aa46a5-9846104-images-thumbs&n=13"},
+        { "id": "5", "title": "Effector",  "body": "Инструмент для работы с бизнес-логикой приложения",  "logo": "https://yt3.googleusercontent.com/ytc/AIdro_mLfseWLKRsLRbhzqtU4LNFyxFdexLsqqWvJjYgPodoFA=s900-c-k-c0x00ffffff-no-rj"},
+        { "id": "6", "title": "Node.js",  "body": "Платформа для работы с языком JavaScript, которая позволяет писать серверный код",  "logo": "https://habrastorage.org/webt/bs/ml/lo/bsmllozt2li3jmn_6ec8vy4krdq.png"}
+    ]
+  }
