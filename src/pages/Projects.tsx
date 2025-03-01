@@ -11,7 +11,7 @@ const Projects:FC = () => {
     })
 
     useEffect(()=> {
-        setTimeout(() => fetchProjects(), 2000)
+        fetchProjects()
     }, [])
 
     if (isProjectsError) {
