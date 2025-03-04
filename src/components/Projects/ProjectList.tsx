@@ -15,7 +15,7 @@ const ProjectList: FC<ProjectsListProps> = ({projects}) => {
         )
     }
   return (
-    <div>
+    <div className='pr__list'>
     <h1 
       style={{textAlign: 'center'}}
     >

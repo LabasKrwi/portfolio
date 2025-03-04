@@ -5,4 +5,19 @@
     background: transparent;
     border: 1px solid teal;
     cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+@media (max-width: 450px) {
+    .myBtn {
+        padding: 5px 10px;
+        color: teal;
+        font-size: 10px;
+        background: transparent;
+        border: 1px solid teal;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+    }
 }

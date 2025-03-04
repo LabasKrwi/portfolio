@@ -1,0 +1,15 @@
+.menuBtn {
+    justify-content: center;
+    display: flex;
+}
+.myMenu {
+    display: none;
+    margin-left: 50%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.myMenu.active {
+    display:block
+}
+

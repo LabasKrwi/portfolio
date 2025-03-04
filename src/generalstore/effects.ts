@@ -2,7 +2,7 @@ import { createEffect } from "effector";
 import axios, { AxiosResponse } from "axios";
 import { IProject } from "../types/Project";
 import { ITech } from "../types/Techs";
-const BASE_URL = 'https://api.npoint.io/985bfbe8cf021418f80e';
+const BASE_URL = 'https://api.npoint.io/6aa6a325366750a17145';
 
 export const fetchProjectsEffect = createEffect( async ()=> {
     const response: AxiosResponse<IProject[]> = await axios.get(`${BASE_URL}/projects`);

@@ -4,19 +4,27 @@ import MyButton from '../UI/MyButton/MyButton'
 const Navbar:FC = () => {
 
   return (
-    <div className='navbar'>
-      <div className="navbar__links">
-        <MyButton>
-          <Link to="/main">Обо мне</Link>
-        </MyButton>
-        <MyButton>
-          <Link to="/techs">Стек</Link>
-        </MyButton>
-        <MyButton>
-          <Link to="/projects">Проекты</Link>
-        </MyButton>
-      </div>
-    </div>
+    <header>
+      <div className='navbar'>
+        <div className="navbar__links">
+          <div className="navbar__link">
+            <MyButton>
+              <Link to="/main">Главная</Link>
+            </MyButton>
+          </div>
+          <div className='navbar__link'>
+            <MyButton>
+              <Link to="/techs">Стек</Link>
+            </MyButton>
+          </div>
+            <div className="navbar__link">
+              <MyButton>
+                <Link to="/projects">Проекты</Link>
+              </MyButton>
+            </div>
+        </div>
+        </div>
+    </header>
   )
 }
 

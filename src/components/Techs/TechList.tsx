@@ -14,7 +14,7 @@ const TechsList: FC<TechsListProps> = ({techs}) => {
         )
     }
   return (
-    <div>
+    <div className='tech__list'>
     <h1 
       style={{textAlign: 'center'}}
     >

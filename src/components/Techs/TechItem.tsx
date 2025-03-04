@@ -16,7 +16,7 @@ const TechItem: FC<TechItemProps> = ({tech}) => {
                 alt="Logo" 
                 style={{ display: 'inline-block' }} 
             />
-          <strong className='tech__title'>{tech.title}</strong>
+          <div className='tech__title'>{tech.title}</div>
           <div className='tech__body'>{tech.body}</div>
           <MyButton onClick={getOwnId}>Открыть</MyButton>
         </div>

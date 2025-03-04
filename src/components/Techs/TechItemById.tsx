@@ -38,7 +38,7 @@ const TechById: FC = () => {
             />
         </div>
     ) : (
-        <h2>TechList is empty.</h2>
+        <h2>TechItem is empty.</h2>
     )}
 </div>
         )  
