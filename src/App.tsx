@@ -5,13 +5,12 @@ import Navbar from './components/Navbar/Navbar';
 import MyFooter from './components/MyFooter/MyFooter';
 import { useUnit } from 'effector-react';
 import { $menu } from './generalstore/store';
-import { setModalEv } from './generalstore/events';
 function App() {
   const menu = useUnit($menu);
   return (
     <HashRouter >
       <Navbar />
-      <AppRouter/>
+      <AppRouter />
       <MyFooter visible={menu}/>
     </HashRouter>
   );

@@ -2,13 +2,14 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    margin: 20px 0 20px 0;
 }
 .myMenu {
     display: none;
     margin-left: 50%;
     justify-content: center;
     justify-items: center;
+    min-height: 200px;
 }
 
 .myMenu.active {
