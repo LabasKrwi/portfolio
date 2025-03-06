@@ -1,10 +1,11 @@
 import './styles/App.css'
 import AppRouter from './AppRouter'
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import MyFooter from './components/MyFooter/MyFooter';
 import { useUnit } from 'effector-react';
 import { $menu } from './generalstore/store';
+import { setModalEv } from './generalstore/events';
 function App() {
   const menu = useUnit($menu);
   return (

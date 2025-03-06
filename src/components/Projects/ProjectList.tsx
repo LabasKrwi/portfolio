@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { ProjectsListProps } from '../../types/Project'
 import ProjectItem from './ProjectItem'
 import MyModal from '../UI/MyModal/MyModal'
