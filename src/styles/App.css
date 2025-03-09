@@ -207,8 +207,8 @@ footer {
     align-items: center;
   }
   .tech__content img{
-    max-width: 20px;
-    max-height: 20px;  
+    max-width: 30px;
+    max-height: 30px;  
     margin-right: 5px;
   }
   .tech__body {
@@ -270,8 +270,8 @@ footer {
     font-size: 8px;
   }
   .tech__content img{
-    max-width: 15px;
-    max-height: 15px;  
+    max-width: 25px;
+    max-height: 25px;  
     margin-right: 5px;
   }
   .tech__title {
