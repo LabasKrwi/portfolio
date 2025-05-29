@@ -3564,6 +3564,11 @@ commondir@^1.0.1:
   resolved "https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz"
   integrity sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==
 
+compass@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/compass/-/compass-0.1.1.tgz#5c56d5eb442d10c1ad5989ef5c5e925db60c60e1"
+  integrity sha512-9z+RjcAGig6/9uAFeCbWajTvrye1u61ca5QrqN6JTrHRYOOgAKs33Xv/3/fODYthxWC2C97AE0e45PLETNRicg==
+
 compressible@~2.0.18:
   version "2.0.18"
   resolved "https://registry.npmjs.org/compressible/-/compressible-2.0.18.tgz"
