@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet');
 .myCard {
     display: flex; 
     align-items: center; 
     padding: 16px; 
-    border-radius: 8px; 
-    background-color: #f9f9f9; 
     position: relative;
-    width: 700px;
-    top: 50px;
+    width: 100%;
+    justify-content: center;
+    font-family: "Instrument Sans", sans-serif;
     img {
       max-width: 250px; 
       margin-right: 16px; 
@@ -23,8 +23,8 @@
       flex-direction: column;
       li {
         margin-bottom: 8px; 
-        font-size: 16px; 
-        color: #333; 
+        font-size: 3vh; 
+        color: #000000; 
         display: flex;
         flex-grow: 1;
       }
@@ -40,11 +40,9 @@
       display: flex; 
       align-items: center; 
       padding: 16px; 
-      border-radius: 8px; 
-      background-color: #f9f9f9; 
       position: relative;
-      width: 445px;
-      top: 50px;
+      width: 100%;
+      
       img {
         max-width: 250px; 
         margin-right: 16px; 
@@ -59,11 +57,10 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        max-width: 150px;
         li {
           margin-bottom: 8px; 
-          font-size: 16px; 
-          color: #333; 
+          font-size: 2vh; 
+          color: #ffffff; 
           display: flex;
           flex-grow: 1;
         }
@@ -76,11 +73,9 @@
       display: flex; 
       align-items: center; 
       padding: 16px; 
-      border-radius: 8px; 
-      background-color: #f9f9f9; 
       position: relative;
-      width: 350px;
-      top: 50px;
+      width: 100%;
+      
       img {
         max-width: 160px; 
         margin-right: 16px; 
@@ -95,11 +90,10 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        max-width: 150px;
         li {
           margin-bottom: 8px; 
-          font-size: 16px; 
-          color: #333; 
+          font-size: 2vh; 
+          color: #ffffff; 
           display: flex;
           flex-grow: 1;
         }
@@ -113,10 +107,9 @@
       align-items: center; 
       padding: 16px; 
       border-radius: 8px; 
-      background-color: #f9f9f9; 
       position: relative;
-      width: 300px;
-      top: 50px;
+      width: 100%;
+      
       margin-left: auto;
       img {
         max-width: 140px; 
@@ -132,11 +125,10 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        max-width: 150px;
         li {
           margin-bottom: 8px; 
-          font-size: 16px; 
-          color: #333; 
+          font-size: 2vh; 
+          color: #ffffff; 
           display: flex;
           flex-grow: 1;
         }

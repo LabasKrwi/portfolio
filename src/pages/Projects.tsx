@@ -20,14 +20,14 @@ const Projects:FC = () => {
         )
     }
   return (
-    <div>
+    <>
         {isProjectsLoading 
             ?
             <h1>Идет загрузка....</h1>
             :
             <ProjectList projects={projects}/>
         }
-    </div>
+    </>
   )
 }
 
