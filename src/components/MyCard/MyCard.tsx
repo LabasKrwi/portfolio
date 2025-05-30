@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef } from 'react'
+import  { FC } from 'react'
 import cl from './MyCard.module.scss'
 
 const MyCard: FC = () => {
@@ -8,8 +8,7 @@ const MyCard: FC = () => {
 
   return (
     <div className={cl.myCard}>
-      
-      
+      <label className='about'>Обо мне</label>
       <img src="https://sun9-54.userapi.com/impg/72BDi1WYudC45MiWQpSn2KyJfNDcXtzNTa0bjA/qumyN7ztus8.jpg?size=960x1280&quality=95&sign=e52aa3c94bbbec21ed16a522ea075599&type=album" alt=''/>
       <div>
         <img className='logo'src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" alt="" />
@@ -26,7 +25,6 @@ const MyCard: FC = () => {
           <li>Занимаюсь frontend-разработкой с декабря 2023</li>
           <li>Диплом о высшем образовании бакалавра инженера-технолога</li>
         </ul>
-      
     </div>
   )
 }

@@ -4,6 +4,7 @@
 
 
 .myCard {
+    margin-top: 50px;
     display: flex; 
     align-items: center; 
     padding: 16px; 
@@ -11,8 +12,17 @@
     width: 100%;
     justify-content: center;
     flex-direction: column;
+    label {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      top: -20px;
+      font-family: 'Instrument Sans' serif;
+      font-size: x-large;
+    }
     div{
-      position: relative;
+      position: absolute;
+      top: 45px;
       display: flex;
       width: 100px;
       height: 100px;
@@ -23,18 +33,18 @@
         top: 50%; 
         left: 50%;
         transform-origin: center;
-        animation: rotateAroundCenter 10s linear infinite, spinSelf 4s linear infinite; 
+        animation: rotateAroundCenter 10s alternate infinite; 
         }
         @keyframes rotateAroundCenter {
           from {
-            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(50px) rotate(calc(-45deg * var(--i)));
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(50px) rotate(calc(-45deg * var(--i))) scale(1);
           }
           to {
-            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i) + 360deg)) translate(50px) rotate(calc(-45deg * var(--i)));
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i) + 360deg)) translate(50px) rotate(calc(-45deg * var(--i))) scale(2);
          }
-    
         }
         
+
       img:nth-child(1) { --i: 0; }
       img:nth-child(2) { --i: 1; }
       img:nth-child(3) { --i: 2; }
@@ -63,6 +73,7 @@
         color: #000000; 
         display: flex;
         flex-grow: 1;
+        color: aliceblue;
       }
     }
     
@@ -101,6 +112,7 @@
           color: #000000; 
           display: flex;
           flex-grow: 1;
+          color: aliceblue;
         }
       }
     }
@@ -113,9 +125,12 @@
       padding: 16px; 
       position: relative;
       width: 100%;
-      
+      div {
+        position: absolute;
+        top: 20px;
+      }
       img {
-        max-width: 160px; 
+        max-width: 320px;  
         margin-right: 16px; 
         border-radius: 4px; 
       }
@@ -131,7 +146,7 @@
         li {
           margin-bottom: 8px; 
           font-size: 2vh; 
-          color: #ffffff; 
+          color: aliceblue;
           display: flex;
           flex-grow: 1;
         }
@@ -147,10 +162,13 @@
       border-radius: 8px; 
       position: relative;
       width: 100%;
-      
       margin-left: auto;
+      div {
+        position: absolute;
+        top: 15px;
+      }
       img {
-        max-width: 140px; 
+        max-width: 250px; 
         margin-right: 16px; 
         border-radius: 4px; 
       }
@@ -166,7 +184,7 @@
         li {
           margin-bottom: 8px; 
           font-size: 2vh; 
-          color: #ffffff; 
+          color: aliceblue;
           display: flex;
           flex-grow: 1;
         }

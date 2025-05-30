@@ -10,6 +10,7 @@
 body{
   margin-bottom: 150px;
   font-family: "Instrument Sans", sans-serif;
+  color: aliceblue;
   background: -webkit-linear-gradient(160deg, #69B8BB 0%, #42779E 70%);
 }
 

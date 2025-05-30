@@ -9,7 +9,6 @@ export const fetchProjectsEffect = createEffect( async ()=> {
     return response;
 })
 
-
 export const fetchTechsEffect = createEffect( async ()=> {
     const response: AxiosResponse<ITech[]> = await axios.get(`${BASE_URL}/techs`);
     return response;

@@ -1,0 +1,77 @@
+.bmarquee {
+  font-family: 'Segoe UI', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.bmarqueeText {
+  -webkit-animation: animMarquee 15s linear infinite;
+  animation: animMarquee 15s linear infinite;
+  width: 100%;
+  font-size: x-large;
+  
+}
+
+
+
+@-webkit-keyframes animMarquee {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animMarquee {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.bmarqueeTextRev {
+  -webkit-animation: animMarqueeRev 20s linear infinite;
+  animation: animMarqueeRev 20s linear infinite;
+  width: 100%;
+  font-size: x-large;
+}
+
+
+@-webkit-keyframes animMarqueeRev {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animMarqueeRev {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
