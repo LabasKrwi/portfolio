@@ -4,6 +4,8 @@
   "homepage": "https://labaskrwi.github.io/portfolio",
   "private": true,
   "dependencies": {
+    "@mui/material": "^7.1.0",
+    "@mui/styles": "^6.4.8",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",

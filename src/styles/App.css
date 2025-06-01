@@ -2,9 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  align-items: center;
-  
+  box-sizing: border-box;  
 }
 
 body{
@@ -19,39 +17,53 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 367px;
   position: relative;
   width: 100%;
 }
 
 header {
-  position: sticky;
+  position: relative;
   top: 0;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   z-index: 100;
   
 }
 
-.navbar__link {
-  margin: 5px;
-}
 
 .navbar {
-  height: 50px;
+  height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding: 0 15px;
-  background: lightgray;
   width: 100%;
   font-family: "Instrument Sans", sans-serif;
+  color: aliceblue;
+  position: relative;
+  right: 10%;
+  
+}
+
+.navbar__link {
+  margin: 20px;
+  display: block;
+}
+
+.navbar__btn {
+  background: rgba(103, 201, 243, 0.539);
+  border-radius: 30px;
+  width:120%;
+  height: 30px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
 }
 
 .navbar__links {
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 
 .main {

@@ -1,23 +1,20 @@
 .myBtn {
     padding: 5px 15px;
-    color: teal;
-    font-size: 14px;
+    color: white;
+    font-size: 24px;
     background: transparent;
-    border: 1px solid teal;
-    border-radius: 15px;
     cursor: pointer;
     position: relative;
     display: flex;
+    border: none;
 }
 
 @media (max-width: 450px) {
     .myBtn {
         padding: 5px 10px;
-        color: teal;
-        font-size: 10px;
+        color: white;
+        font-size: 24px;
         background: transparent;
-        border: 1px solid teal;
-        border-radius: 15px;
         cursor: pointer;
         position: relative;
         display: flex;
