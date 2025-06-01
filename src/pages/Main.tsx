@@ -10,6 +10,7 @@ const Main: FC = () => {
         <MyCard />
         <MyMarquee />
         <Projects/>
+        <MyMarquee />
         <Techs />
       </div>
         

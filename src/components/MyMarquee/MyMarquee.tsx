@@ -1,16 +1,17 @@
 import { FC } from 'react'
-import cl from'./MyMarquee.module.scss'
+import cl from './MyMarquee.module.scss'
 
-const MyMarquee:FC = () => {
+const MyMarquee: FC = () => {
   return (
-        <div className={cl.bmarquee}>
-          <div className={`${cl.bmarqueeText}`}>Frontend</div>
-          <br />
-          <div className={`${cl.bmarqueeTextRev}`}>
-              <h3>Коперман Илья</h3>
-              <h3>Коперман Илья</h3>
-          </div>
-        </div>
+    <div className={cl.bmarquee}>
+     
+      <div className={cl.bmarqueeInner}>
+        
+        
+        <div className={cl.bmarqueeContent}><span>Frontend </span><span>Frontend</span><span>Frontend</span></div>
+        <div className={cl.bmarqueeContent}><span>Frontend </span><span>Frontend</span><span>Frontend</span></div>
+      </div>
+    </div>
   )
 }
 

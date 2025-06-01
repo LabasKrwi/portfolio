@@ -20,7 +20,7 @@ const Techs: FC = () => {
         )
     }
   return (
-    <div>
+    <div className='tech__container'>
         {isTechsLoading 
             ?
             <h1>Идет загрузка....</h1>

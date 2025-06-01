@@ -12,9 +12,7 @@ const MyCard: FC = () => {
         <div className={cl.sContainer}>
           <div className={cl.meContainer}><img className={cl.me} src="https://sun9-54.userapi.com/impg/72BDi1WYudC45MiWQpSn2KyJfNDcXtzNTa0bjA/qumyN7ztus8.jpg?size=960x1280&quality=95&sign=e52aa3c94bbbec21ed16a522ea075599&type=album" alt=''/>
           </div>
-
           <div className={cl.logoContainer}>
-  
             <img className={cl.logo} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" alt="" />
             <img className={cl.logo} src="https://avatars.mds.yandex.net/i?id=69cffdf42421715b6798a650d7a3c8374ad7ea72c622697b-12173886-images-thumbs&n=13" alt="" />
             <img className={cl.logo} src="https://avatars.mds.yandex.net/i?id=9914ff3fb1c5614ad742f0e940ac7c7e08aa46a5-9846104-images-thumbs&n=13" alt="" />

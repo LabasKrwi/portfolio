@@ -1,18 +1,25 @@
-.menuBtn {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0 20px 0;
-}
-.myMenu {
-    display: none;
-    margin-left: 50%;
-    justify-content: center;
-    justify-items: center;
-    min-height: 200px;
-}
 
-.myMenu.active {
-    display:block
+.myMenu {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    flex-direction: column;
+    div {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 50px;
+            max-height: 50px;
+            min-width: 50px;
+            min-height: 50px;
+    }
+
+    }
+    
 }
+    
+    
 

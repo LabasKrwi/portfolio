@@ -2,7 +2,7 @@ import { createStore } from "effector";
 import { fetchProjectsEffect, fetchTechsEffect } from "./effects";
 import { IProject } from "../types/Project";
 import { ITech } from "../types/Techs";
-import { setMenuEv, setModalEv, setProjIdDataEv, setTechIdDataEv } from "./events";
+import { setModalEv, setProjIdDataEv, setTechIdDataEv } from "./events";
 import { fetchProjectByIdEffect } from "./effects";
 import { fetchTechsByIdEffect } from "./effects";
 export const $projects = createStore<IProject[]>([])
@@ -26,5 +26,3 @@ export const $techId = createStore<number>(0)
 export const $modal = createStore<boolean>(false)
     .on(setModalEv, ((_, visible) => visible))
 
-export const $menu = createStore<boolean>(false)
-    .on(setMenuEv, (state, payload) => payload !== state)
