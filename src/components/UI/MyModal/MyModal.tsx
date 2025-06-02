@@ -5,9 +5,13 @@ import cl from './MyModal.module.scss'
 interface MyModalProps {
   children: any;
   visible: boolean;
-  setVisible: (visible :boolean) => void
+  setVisible: (visible :boolean) => void;
+  
 }
+
 const MyModal: FC<MyModalProps> = ({...props}) => {
+  
+
   const rootClasses = [cl.myModal];
   if (props.visible) {
     rootClasses.push(cl.active)

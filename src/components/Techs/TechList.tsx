@@ -1,13 +1,22 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { TechsListProps } from '../../types/Techs'
 import TechItem from './TechItem'
 import MyModal from '../UI/MyModal/MyModal'
-import { setModalEv } from '../../generalstore/events'
-import { $modal } from '../../generalstore/store'
+import {  setTechModalEv } from '../../generalstore/events'
+import { $techModal } from '../../generalstore/store'
 import { useUnit } from 'effector-react'
 import TechById from './TechItemById'
+
+
+
 const TechsList: FC<TechsListProps> = ({techs}) => {
-  const modal = useUnit($modal);
+  const modal = useUnit($techModal);
+  const isTechModalOpen = modal['tech'];
+
+  const closeTechModal = () => {
+    setTechModalEv({ key: 'tech', visible: false });
+  };
+
     if (!techs.length) {
         return (
             <h1 style={{textAlign: 'center'}}>Технологии пока не указаны</h1>
@@ -24,7 +33,7 @@ const TechsList: FC<TechsListProps> = ({techs}) => {
     <TechItem key={tech.id}  tech={tech}/>
       )
     }
-    <MyModal setVisible={setModalEv} visible={modal} children={<TechById/>}></MyModal>
+    <MyModal setVisible={closeTechModal} visible={isTechModalOpen} children={<TechById/>}></MyModal>
   </div>
   )}
   

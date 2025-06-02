@@ -2,13 +2,15 @@ import { FC, useEffect } from 'react'
 import { useFetchById } from '../../hooks/useFethcing'
 import { $techById, $techId } from '../../generalstore/store'
 import { useUnit } from 'effector-react'
-import { fetchTechsByIdEffect } from '../../generalstore/effects'
+import { fetchTechByIdEffect } from '../../generalstore/effects'
+
 const TechById: FC = () => {
     const techById = useUnit($techById);
     const techId = useUnit($techId);
     const [fetchTechById, isTechIdLoading, isTechIdError] = useFetchById(async () => {
+
         if (techId > 0) {
-            const response = await fetchTechsByIdEffect(techId);
+            const response = await fetchTechByIdEffect(techId);
             return {response}
         }
         return null; 
@@ -38,7 +40,7 @@ const TechById: FC = () => {
             />
         </div>
     ) : (
-        <h2>TechItem is empty.</h2>
+        isTechIdError
     )}
 </div>
         )  

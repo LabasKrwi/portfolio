@@ -2,11 +2,12 @@ import { FC } from 'react'
 import { TechItemProps } from '../../types/Techs'
 import MyButton from '../UI/MyButton/MyButton'
 import { setTechIdDataEv } from '../../generalstore/events'
-import { setModalEv } from '../../generalstore/events'
+import { setTechModalEv } from '../../generalstore/events'
 const TechItem: FC<TechItemProps> = ({tech}) => {
     const getOwnId = () => {
         setTechIdDataEv(tech.id);
-        setModalEv(true);
+        setTechModalEv({ key: 'tech', visible: true });
+        
       }
   return (
     <div className='tech'>

@@ -4,8 +4,8 @@ import { fetchProjectByIdEffect } from '../../generalstore/effects'
 import { $projectById } from '../../generalstore/store'
 import { useUnit } from 'effector-react'
 import { $projectId } from '../../generalstore/store'
-import { setProjIdDataEv } from '../../generalstore/events'
-import { IProject } from '../../types/Project'
+
+
 const ProjectById: FC = () => {
     const projectById = useUnit($projectById);
     const projectId = useUnit($projectId);
@@ -17,13 +17,14 @@ const ProjectById: FC = () => {
         return null; 
     });
 
-    
     useEffect(() => {
         const fetchData = async () => {
             if (projectId > 0) {
                 await fetchProjectById()
             }
         }
+        
+
         fetchData();
     }, [projectId]);
     
@@ -31,13 +32,13 @@ const ProjectById: FC = () => {
   return (
     <div>
     {projectById?.id ? (
-        <>
+        <div>
             <strong>{projectById.title}</strong>
             <div>{projectById.body}</div>
             <a href={projectById.link}>{projectById.link}</a>
-        </>
+        </div>
     ) : (
-        <h2>Project not found.</h2>
+        isProjectIdError
     )}
 </div>
         )  

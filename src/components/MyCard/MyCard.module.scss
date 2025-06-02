@@ -21,21 +21,21 @@
         div.meContainer {
           position: relative;
           overflow:hidden;
-          width:400px;
-          height:400px;
+          width:500px;
+          height:500px;
           border-radius: 50%;
 
           img.me {
             position: relative;
             object-fit: cover;
-            max-width: 400px; 
+            max-width: 500px; 
           }
         }
         div.logoContainer{
           position: absolute;
           width: 400px;
           height: 400px;
-          --radius: 260px;
+          --radius: 290px;
           left:50%;
           top:50%;
           img.logo {
@@ -97,6 +97,483 @@
   }    
 
 
-  
+  @media (max-width: 1880px) {
+    
+  .myCard {
+    margin-top: 50px;
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    height: 45dvh;
+      div.sContainer {
+        position: relative;
+        display: flex;
+        right:20%;
 
-  
+        div.meContainer {
+          position: relative;
+          overflow:hidden;
+          width:500px;
+          height:500px;
+          border-radius: 50%;
+
+          img.me {
+            position: relative;
+            object-fit: cover;
+            max-width: 500px; 
+          }
+        }
+        div.logoContainer{
+          position: absolute;
+          width: 400px;
+          height: 400px;
+          --radius: 290px;
+          left:50%;
+          top:50%;
+          img.logo {
+            position: absolute; 
+            max-width: 30px;
+            transform-origin: center;
+            animation: rotateAroundCenter 20s alternate infinite;     
+          }
+      
+    }
+      @keyframes rotateAroundCenter {
+
+        from {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1);
+        }
+
+        to {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i) + 360deg)) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1.7);
+        }
+      }
+      img:nth-child(1) { --i: 0; }
+      img:nth-child(2) { --i: 1; }
+      img:nth-child(3) { --i: 2; }
+      img:nth-child(4) { --i: 3; }
+      img:nth-child(5) { --i: 4; }
+      img:nth-child(6) { --i: 5; }
+      img:nth-child(7) { --i: 6; }
+      img:nth-child(8) { --i: 7; }
+    }
+      
+    
+    ul {
+      position: absolute;
+      columns: 1;
+      list-style-type: none; 
+      padding: 0; 
+      margin: 0; 
+      display: block;
+      width: 600px;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-weight: bold;
+      left: 5%;
+
+      h1{
+        margin-bottom: 30px;
+        font-size: 3vh;
+      }
+
+      li {
+        margin-bottom: 8px; 
+        font-size: 3vh; 
+        color: #000000; 
+        display: flex;
+        flex-grow: 1;
+        color: aliceblue;
+      }
+    }
+  }    
+
+}
+  @media (max-width: 1575px) {
+    
+  .myCard {
+    margin-top: 50px;
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    height: 45dvh;
+      div.sContainer {
+        position: relative;
+        display: flex;
+        right:20%;
+
+        div.meContainer {
+          position: relative;
+          overflow:hidden;
+          width:400px;
+          height:400px;
+          border-radius: 50%;
+
+          img.me {
+            position: relative;
+            object-fit: cover;
+            max-width: 400px; 
+          }
+        }
+        div.logoContainer{
+          position: absolute;
+          width: 400px;
+          height: 400px;
+          --radius: 230px;
+          left:50%;
+          top:50%;
+          img.logo {
+            position: absolute; 
+            max-width: 30px;
+            transform-origin: center;
+            animation: rotateAroundCenter 20s alternate infinite;     
+          }
+      
+    }
+      @keyframes rotateAroundCenter {
+
+        from {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1);
+        }
+
+        to {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i) + 360deg)) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1.7);
+        }
+      }
+      img:nth-child(1) { --i: 0; }
+      img:nth-child(2) { --i: 1; }
+      img:nth-child(3) { --i: 2; }
+      img:nth-child(4) { --i: 3; }
+      img:nth-child(5) { --i: 4; }
+      img:nth-child(6) { --i: 5; }
+      img:nth-child(7) { --i: 6; }
+      img:nth-child(8) { --i: 7; }
+    }
+      
+    
+    ul {
+      position: absolute;
+      columns: 1;
+      list-style-type: none; 
+      padding: 0; 
+      margin: 0; 
+      display: block;
+      width: 600px;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-weight: bold;
+      left: 5%;
+
+      h1{
+        margin-bottom: 30px;
+        font-size: 2.5vh;
+      }
+
+      li {
+        margin-bottom: 8px; 
+        font-size: 2.5vh; 
+        color: #000000; 
+        display: flex;
+        flex-grow: 1;
+        color: aliceblue;
+      }
+    }
+  }    
+
+}
+  @media (max-width: 1300px) {
+    
+  .myCard {
+    margin-top: 50px;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    height: 45dvh;
+      div.sContainer {
+        position: relative;
+        display: flex;
+        right: 0%;
+        align-items: center;
+        justify-content: center;
+        div.meContainer {
+          position: relative;
+          overflow:hidden;
+          width:400px;
+          height:400px;
+          border-radius: 50%;
+
+          img.me {
+            position: relative;
+            object-fit: cover;
+            max-width: 400px; 
+          }
+        }
+        div.logoContainer{
+          position: absolute;
+          width: 400px;
+          height: 400px;
+          --radius: 230px;
+          left:50%;
+          top:50%;
+          img.logo {
+            position: absolute; 
+            max-width: 30px;
+            transform-origin: center;
+            animation: rotateAroundCenter 20s alternate infinite;     
+          }
+      
+    }
+      @keyframes rotateAroundCenter {
+
+        from {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1);
+        }
+
+        to {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i) + 360deg)) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1.7);
+        }
+      }
+      img:nth-child(1) { --i: 0; }
+      img:nth-child(2) { --i: 1; }
+      img:nth-child(3) { --i: 2; }
+      img:nth-child(4) { --i: 3; }
+      img:nth-child(5) { --i: 4; }
+      img:nth-child(6) { --i: 5; }
+      img:nth-child(7) { --i: 6; }
+      img:nth-child(8) { --i: 7; }
+    }
+      
+    
+    ul {
+      position: relative;
+      columns: 1;
+      list-style-type: none; 
+      padding: 0; 
+      margin: 0; 
+      display: block;
+      width: 600px;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-weight: bold;
+      left: 5%;
+
+      h1{
+        margin-bottom: 30px;
+        font-size: 2.5vh;
+      }
+
+      li {
+        margin-bottom: 8px; 
+        font-size: 2.5vh; 
+        color: #000000; 
+        display: flex;
+        flex-grow: 1;
+        color: aliceblue;
+      }
+    }
+  }    
+
+}
+  @media (max-width: 800px) {
+    
+  .myCard {
+    margin-top: 50px;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    height: 30dvh;
+      div.sContainer {
+        position: relative;
+        display: flex;
+        right: 0%;
+        align-items: center;
+        justify-content: center;
+        div.meContainer {
+          position: relative;
+          overflow:hidden;
+          width:200px;
+          height:200px;
+          border-radius: 50%;
+
+          img.me {
+            position: relative;
+            object-fit: cover;
+            max-width: 200px; 
+          }
+        }
+        div.logoContainer{
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          --radius: 115px;
+          left:50%;
+          top:50%;
+          img.logo {
+            position: absolute; 
+            max-width: 30px;
+            transform-origin: center;
+            animation: rotateAroundCenter 20s alternate infinite;     
+          }
+      
+    }
+      @keyframes rotateAroundCenter {
+
+        from {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1);
+        }
+
+        to {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i) + 360deg)) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1.7);
+        }
+      }
+      img:nth-child(1) { --i: 0; }
+      img:nth-child(2) { --i: 1; }
+      img:nth-child(3) { --i: 2; }
+      img:nth-child(4) { --i: 3; }
+      img:nth-child(5) { --i: 4; }
+      img:nth-child(6) { --i: 5; }
+      img:nth-child(7) { --i: 6; }
+      img:nth-child(8) { --i: 7; }
+    }
+      
+    
+    ul {
+      position: relative;
+      columns: 1;
+      list-style-type: none; 
+      padding: 0; 
+      margin: 0; 
+      display: block;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-weight: bold;
+      left: 5%;
+
+      h1{
+        margin-bottom: 30px;
+        font-size: 2vh;
+      }
+
+      li {
+        margin-bottom: 8px; 
+        font-size: 2vh; 
+        color: #000000; 
+        display: flex;
+        flex-grow: 1;
+        color: aliceblue;
+      }
+    }
+  }    
+
+}
+  @media (max-width: 600px) {
+    
+  .myCard {
+    margin-top: 50px;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    height: 30dvh;
+      div.sContainer {
+        position: relative;
+        display: flex;
+        right: 0%;
+        align-items: center;
+        justify-content: center;
+        div.meContainer {
+          position: relative;
+          overflow:hidden;
+          width:200px;
+          height:200px;
+          border-radius: 50%;
+
+          img.me {
+            position: relative;
+            object-fit: cover;
+            max-width: 200px; 
+          }
+        }
+        div.logoContainer{
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          --radius: 115px;
+          left:50%;
+          top:50%;
+          img.logo {
+            position: absolute; 
+            max-width: 30px;
+            transform-origin: center;
+            animation: rotateAroundCenter 20s alternate infinite;     
+          }
+      
+    }
+      @keyframes rotateAroundCenter {
+
+        from {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1);
+        }
+
+        to {
+          transform: translate(-50%, -50%) rotate(calc(45deg * var(--i) + 360deg)) translate(var(--radius)) rotate(calc(-45deg * var(--i))) scale(1.7);
+        }
+      }
+      img:nth-child(1) { --i: 0; }
+      img:nth-child(2) { --i: 1; }
+      img:nth-child(3) { --i: 2; }
+      img:nth-child(4) { --i: 3; }
+      img:nth-child(5) { --i: 4; }
+      img:nth-child(6) { --i: 5; }
+      img:nth-child(7) { --i: 6; }
+      img:nth-child(8) { --i: 7; }
+    }
+      
+    
+    ul {
+      position: relative;
+      columns: 1;
+      list-style-type: none; 
+      padding: 0; 
+      margin: 0; 
+      display: block;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-weight: bold;
+      left: 5%;
+
+      h1{
+        margin-bottom: 30px;
+        font-size: 2vh;
+      }
+
+      li {
+        margin-bottom: 8px; 
+        font-size: 2vh; 
+        color: #000000; 
+        display: flex;
+        flex-grow: 1;
+        color: aliceblue;
+      }
+    }
+  }    
+
+}

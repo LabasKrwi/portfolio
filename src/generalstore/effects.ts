@@ -18,7 +18,7 @@ export const fetchProjectByIdEffect = createEffect( async (id: number)=> {
     const response: AxiosResponse<IProject> = await axios.get(`${BASE_URL}/projects/${id-1}`);
     return response;
 })
-export const fetchTechsByIdEffect = createEffect( async (id: number)=> {
+export const fetchTechByIdEffect = createEffect( async (id: number)=> {
     const response: AxiosResponse<ITech> = await axios.get(`${BASE_URL}/techs/${id-1}`);
     return response;
 })

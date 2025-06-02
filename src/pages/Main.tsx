@@ -4,7 +4,10 @@ import Projects from './Projects'
 import Techs from './Techs'
 import MyMarquee from '../components/MyMarquee/MyMarquee';
 
+
 const Main: FC = () => {
+  
+
   return (
       <div className='main'>
         <MyCard />

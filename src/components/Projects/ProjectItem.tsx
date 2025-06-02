@@ -1,12 +1,12 @@
 import { FC } from 'react'
 import { ProjectItemProps } from '../../types/Project';
-import { setModalEv, setProjIdDataEv } from '../../generalstore/events';
+import { setProjModalEv, setProjIdDataEv } from '../../generalstore/events';
 import MyButton from '../UI/MyButton/MyButton';
 
 const ProjectItem: FC<ProjectItemProps> = ({project}) => {
   const getOwnId = () => {
     setProjIdDataEv(project.id);
-    setModalEv(true);
+    setProjModalEv({ key: 'proj', visible: true });
   }
   return (
     <div className='project'>

@@ -2,13 +2,21 @@ import { FC } from 'react'
 import { ProjectsListProps } from '../../types/Project'
 import ProjectItem from './ProjectItem'
 import MyModal from '../UI/MyModal/MyModal'
-import { setModalEv } from '../../generalstore/events'
+import {  setProjModalEv } from '../../generalstore/events'
 import { useUnit } from 'effector-react'
-import { $modal } from '../../generalstore/store'
+import { $projModal } from '../../generalstore/store'
 import ProjectById from './ProjectById'
+
+
 const ProjectList: FC<ProjectsListProps> = ({projects}) => {
-  const modal = useUnit($modal);
-  
+  const modal = useUnit($projModal);
+   const isProjModalOpen = modal['proj'];
+
+  const closeProjModal = () => {
+    setProjModalEv({ key: 'proj', visible: false });
+    
+  };
+
     if (!projects.length) {
         return (
             <h1 style={{textAlign: 'center'}}>Проекты пока не написаны</h1>
@@ -25,7 +33,7 @@ const ProjectList: FC<ProjectsListProps> = ({projects}) => {
     <ProjectItem key={project.id}  project={project}/>
       )
     }
-    <MyModal setVisible={setModalEv} visible={modal} children={<ProjectById/>}></MyModal>
+    <MyModal  setVisible={closeProjModal} visible={isProjModalOpen} children={<ProjectById/>}></MyModal>
   </div>
   )}
 
