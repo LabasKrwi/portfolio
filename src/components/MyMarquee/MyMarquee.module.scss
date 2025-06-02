@@ -39,3 +39,49 @@
     
   }
 }
+
+
+
+@media (max-width: 450px) {
+  .bmarquee {
+  font-family: 'Segoe UI', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #ffffff7c;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+
+.bmarqueeInner {
+  display: flex;
+  width: calc(200%); 
+  animation: scrollLeft 10s linear infinite; 
+  font-size: 25px;
+}
+
+
+.bmarqueeContent {
+  flex-shrink: 0; 
+  width: 50%; 
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+    
+  }
+}
+}

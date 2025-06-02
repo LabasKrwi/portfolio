@@ -515,12 +515,13 @@
           position: absolute;
           width: 200px;
           height: 200px;
-          --radius: 115px;
+          --radius: 125px;
           left:50%;
           top:50%;
+
           img.logo {
             position: absolute; 
-            max-width: 30px;
+            max-width: 20px;
             transform-origin: center;
             animation: rotateAroundCenter 20s alternate infinite;     
           }
@@ -575,5 +576,4 @@
       }
     }
   }    
-
 }
