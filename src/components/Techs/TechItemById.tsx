@@ -3,7 +3,7 @@ import { useFetchById } from '../../hooks/useFethcing'
 import { $techById, $techId } from '../../generalstore/store'
 import { useUnit } from 'effector-react'
 import { fetchTechByIdEffect } from '../../generalstore/effects'
-
+import MyLoader from '../UI/MyLoader/MyLoader'
 const TechById: FC = () => {
     const techById = useUnit($techById);
     const techId = useUnit($techId);
@@ -18,12 +18,17 @@ const TechById: FC = () => {
 
     
     useEffect(() => {
+        
         const fetchData = async () => {
             if (techId > 0) {
-                await fetchTechById()
+                    
+                        await fetchTechById()
+                    
             }
         }
         fetchData();
+        $techById.reinit();
+        $techById.reset();
     }, [techId]);
     
 
@@ -40,7 +45,9 @@ const TechById: FC = () => {
             />
         </div>
     ) : (
-        isTechIdError
+        
+        <MyLoader />
+        
     )}
 </div>
         )  

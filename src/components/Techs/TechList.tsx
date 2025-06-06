@@ -6,7 +6,7 @@ import {  setTechModalEv } from '../../generalstore/events'
 import { $techModal } from '../../generalstore/store'
 import { useUnit } from 'effector-react'
 import TechById from './TechItemById'
-
+import MyLoader from '../UI/MyLoader/MyLoader'
 
 
 const TechsList: FC<TechsListProps> = ({techs}) => {
@@ -19,7 +19,7 @@ const TechsList: FC<TechsListProps> = ({techs}) => {
 
     if (!techs.length) {
         return (
-            <h1 style={{textAlign: 'center'}}>Технологии пока не указаны</h1>
+            <MyLoader />
         )
     }
   return (

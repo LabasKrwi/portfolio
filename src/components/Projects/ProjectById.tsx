@@ -4,7 +4,7 @@ import { fetchProjectByIdEffect } from '../../generalstore/effects'
 import { $projectById } from '../../generalstore/store'
 import { useUnit } from 'effector-react'
 import { $projectId } from '../../generalstore/store'
-
+import MyLoader from '../UI/MyLoader/MyLoader'
 
 const ProjectById: FC = () => {
     const projectById = useUnit($projectById);
@@ -19,6 +19,7 @@ const ProjectById: FC = () => {
 
     useEffect(() => {
         const fetchData = async () => {
+            
             if (projectId > 0) {
                 await fetchProjectById()
             }
@@ -26,6 +27,8 @@ const ProjectById: FC = () => {
         
 
         fetchData();
+        $projectById.reinit();
+        $projectById.reset();
     }, [projectId]);
     
 
@@ -38,7 +41,7 @@ const ProjectById: FC = () => {
             <a href={projectById.link}>{projectById.link}</a>
         </div>
     ) : (
-        isProjectIdError
+        <MyLoader />
     )}
 </div>
         )  

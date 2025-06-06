@@ -6,7 +6,7 @@ import {  setProjModalEv } from '../../generalstore/events'
 import { useUnit } from 'effector-react'
 import { $projModal } from '../../generalstore/store'
 import ProjectById from './ProjectById'
-
+import MyLoader from '../UI/MyLoader/MyLoader'
 
 const ProjectList: FC<ProjectsListProps> = ({projects}) => {
   const modal = useUnit($projModal);
@@ -19,7 +19,7 @@ const ProjectList: FC<ProjectsListProps> = ({projects}) => {
 
     if (!projects.length) {
         return (
-            <h1 style={{textAlign: 'center'}}>Проекты пока не написаны</h1>
+            <MyLoader />
         )
     }
   return (
